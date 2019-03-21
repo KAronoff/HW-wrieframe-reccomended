@@ -1,5 +1,7 @@
 body {
   background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 span {
@@ -39,10 +41,24 @@ ul{
    margin: 0 auto;
  }
 
+ p {
+  font-family: 'Montserrat', sans-serif;
+
+ }
+
  .clearfix::after {
    display: block;
    clear: both;
    content: "";
+ }
+
+ .area1 {
+  background-color: #BCE3FF;
+  height: 450px;
+ }
+
+ .fontstuff {
+    font-family: 'Germania One', cursive;
  }
 
  #topbar {
@@ -65,10 +81,10 @@ ul{
    margin-right: 17px;
  }
 
- .area1 {
-  background-color: #BCE3FF;
-  height: 450px;
- }
+#area1hr {
+  width: 40%;
+  float: left;
+}
 
  #img {
    float: left;

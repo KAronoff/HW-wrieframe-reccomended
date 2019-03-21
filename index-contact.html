@@ -4,19 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Germania+One|Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="styl-reccomended.css">
   <title>Bio</title>
 </head>
 <body>
   <div id="topbar" class="clearfix">
     <div id="yourname">
-      <span>Your Name</span>
+      <span class="fontstuff">Your Name</span>
     </div>
     <div id="navbar">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index-portfolio.html">Portfolio</a></li>
+        <li><a href="index-contact.html">Contact</a></li>
       </ul>
     </div>
   </div>
@@ -24,11 +25,32 @@
   <main>
     <div class="area1">
       <form>
-        <h1>Contact</h1>
+        <h1 class="fontstuff">Contact</h1>
         <div id="contactarea">
           <!--put the input fields here-->
-          <label for="firstname">First Name</label>
-          <input type="text" name="firstname" value="First Name">
+          <fieldset>
+            <legend>Name</legend>
+            <label for="firstname" class="labels">First Name:</label>
+            <input type="text" name="firstname" value="First Name">
+          
+            <br/>
+            <label for ="lastname" class="labels">Last Name:</label>
+            <input type="text" name="lastname" value="Last Name">
+          </fieldset>
+          <br/>
+          <fieldset>
+            <legend>Who are you?</legend>
+            <input type="radio" name="Student" value="Student" checked>Student
+            <br/>
+            <input type="radio" name="Teacher" value="Teacher">Teacher
+            <br/>
+            <input type="radio" name="Other" value="Other">Other
+          </fieldset>
+          <fieldset>
+            <legend>Email</legend>
+            <input type="text" name="email" value="email">
+            <button type="button">Submit</button>
+          </fieldset>
         </div>
       </article>
     </div>
